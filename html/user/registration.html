@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>注册</title>
+	<meta charset="utf-8">
+	<!--设置表单特效-->
+	<style>
+	h1{
+	text-align:center;
+	font-size:50px;
+	}
+	
+	#bodybackground{
+	background-color:#E8E8E8;<!--设置背景-->
+	background-repeat: repeat；
+	}
+	
+	#transbox{
+	width: 50%;
+	height: 1100px;
+	margin:0px;
+	padding:0;
+	position:relative;
+	left:25%;
+	background-color: #ffffff;
+	border: 1px solid black;
+	}
+	img.small {
+	height: 15%;
+	position:relative;
+	left:39%;
+	}
+	input[type="password"],input[type="text"]
+	{
+	width:50%;
+	height:30px;
+	display:block;
+	background-color:#CCCC99;
+	font-size:30px;
+	}
+    p{
+	font-size:30px;
+	}
+	input[type="submit"]
+	{
+	width:25%;
+	display:block;
+	font-size:20px;
+	}
+	input{
+	width:3%;
+	height:50px;
+	margin:0px;
+	padding:0;
+	}
+	label{
+	font-size:25px;
+	left:52%;
+	}
+	pre
+	{
+	font-size:25px;
+	}
+	</style>
+	<!--JS判断是否合法输入-->
+</head>
+<body>
+<div id="wrapper">
+	<div id="transbox">
+	    <center>
+		<h1>用户注册</h1>
+		</center>
+		<form name="reg" action="login.html" onsubmit="return validateForm()">
+		<center>
+		<pre>账户: <input type="text" name="firstname"><br>密码: <input type="password" name="pwd"><br>确认密码: <input type="password" name="pwd2"><br></pre>
+		<input type="submit" value="提交"/>
+		</center>
+		</form>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>登陆</title>
+	<meta charset="utf-8">
+	<!--设置表单样式-->
+	<style>
+	h1{
+	text-align:center;
+	font-size:50px;
+	}
+	#bodybackground{
+	background-color:#E8E8E8;<!--设置背景-->
+	background-repeat: repeat；
+	}
+	
+	img.small {
+	height: 15%;
+	position:relative;
+	left:39%;
+	top:0;
+	}
+	
+	#transbox{
+	width: 50%;
+	height: 900px;
+	margin:0px;
+	padding:0;
+	position:relative;
+	left:25%;
+	background-color: #ffffff;
+	border: 1px solid black;
+	}
+	input[type="text"],input[type="password"]
+	{
+	width:50%;
+	height:30px;
+	display:block;
+	background-color:#CCCC99;
+	font-size:30px;
+	}
+
+	input[type="submit"]
+	{
+	width:25%;
+	height:30px;
+	display:block;
+	font-size:20px;
+	}
+	pre{
+	font-size:25px;
+	}
+	</style>
+</head>
+<body>
+<div id="wrapper">
+		<div id="transbox">
+			<h1>用户登录</h1>
+			<form name="reg" action="children.html" onsubmit="return validateForm()">
+			<center>
+			<pre>账户: <input type="text" name="firstname"><br>密码: <input type="password" name="pwd"><br></pre>
+			<input type="submit" value="提交">
+			<br>
+			<br>
+			<a href="registration.html" style="font-size:20px">没有账号？点击注册！</a>
+			</center>
+		</form>
+		</div>
+</div>
+</body>
+</html>
