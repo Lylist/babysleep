@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<meta charset="UTF-8"/>
+    <meta charset="UTF-8">
+    <title>儿童</title>
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+ 
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+ 
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
-
+#img{
+position:absolute;
+width:100%;
+height:100%;
+}
 </style>
 </head>
 <body>
-<div>
-<a href="./parent/main.html"><img border="0" src="../../images/children.jpg" /> </a>
-</div>
+<!--<div>
+<a href="./parent/main.html"><img border="0" src="../../images/1.gif" /> </a>
+</div>-->
+<img onclick="changeCode();" src="../../images/1.gif" id="img" />
+<script>
+   function changeCode(){
+   var str="../../images/"+Math.random()+".gif";
+      document.getElementById("img").src="../../images/1.gif";
+   }
+</script>
+
 </body>
 </html>

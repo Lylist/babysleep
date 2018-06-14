@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>今日推荐</title>
+    <title>今日播放</title>
 <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
  
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
@@ -57,32 +57,55 @@
 	</div>
 </div>
 <div class="container-fluid">
-	<div class="row-fluid clearfix">
-		<div id="leftimage" class="col-md-4 column">
-		    <a href="../../resources/channel_user1.html"><img alt="140x140" src="../../../images/名人故事.jpg" height="250" width="250"/></a>
-		</div>
-		<div id="rightimage" class="col-md-4 column">
-            <a href="../../resources/channel_user2.html"><img alt="140x140" src="../../../images/轻柔音乐.jpg" height="250" width="250"/></a>
-		</div>
-	</div>
-</div>
-<div class="container-fluid">
-	<div class="row-fluid clearfix">
-		<div id="leftimage" class="col-md-4 column">
-			<a href="../../resources/channel_user3.html"><img alt="140x140" src="../../../images/唐诗宋词.jpg" height="250" width="250"/></a>
-		</div>
-		<div id="rightimage" class="col-md-4 column">
-            <a href="../../resources/channel_user4.html"><img alt="140x140" src="../../../images/童话故事.jpg" height="250" width="250"/></a>
-		</div>
-	</div>
-</div>
-<div class="container-fluid">
-	<div class="row-fluid clearfix">
-		<div id="leftimage" class="col-md-4 column">
-			<a href="../../resources/channel_user5.html"><img alt="140x140" src="../../../images/英文儿歌.jpg" height="250" width="250"/></a>
-		</div>
-		<div id="rightimage" class="col-md-4 column">
-            <a href="../../resources/channel_user6.html"><img alt="140x140" src="../../../images/寓言故事.jpg" height="250" width="250"/></a>
+	<div class="row-fluid">
+		<div class="span12" style="padding-left:40%;padding-top:5%">
+			<form class="form-inline">
+				<fieldset>
+					<legend><strong>您的信息：</strong></legend>
+					<p>
+						邮箱<input type="text" />
+					</p>
+					<p>
+						手机<input type="text" />
+					</p>
+				</fieldset>
+			</form>
+			<form class="form-inline">
+				<fieldset>
+					<legend><strong>儿童信息：</strong></legend> 年龄<input type="text" />
+					<p>
+					性别：
+						<label class="checkbox"><input type="checkbox" /> 男</label>
+						<label class="checkbox"><input type="checkbox" /> 女</label>
+					</p>
+					<p>
+					是否识字：
+						<label class="checkbox"><input type="checkbox" /> 是</label>
+						<label class="checkbox"><input type="checkbox" /> 否</label>
+					</p>
+					<p>
+					喜好：
+					</p>
+					<p>
+						<label class="checkbox"><input type="checkbox" /> 音乐</label>
+					</p>
+					<p>
+						<label class="checkbox"><input type="checkbox" /> 诗词</label>
+					</p>
+					<p>
+						<label class="checkbox"><input type="checkbox" /> 童话</label>
+					</p>
+					<p>
+						<label class="checkbox"><input type="checkbox" /> 寓言</label>
+					</p>
+					<p>
+						<label class="checkbox"><input type="checkbox" /> 名人</label>
+					</p>
+					<p>
+						<button class="btn" type="submit">提交</button>
+					</p>
+				</fieldset>
+			</form>
 		</div>
 	</div>
 </div>
