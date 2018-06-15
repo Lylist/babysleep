@@ -28,18 +28,29 @@ box-shadow:0px 3px  30px 5px #aaa;
 	<div class="row-fluid">
 		<div class="span12">
 		<div id="firstbtn" class="btn-group">
-				 <button class="btn" type="button"><em class="icon-align-justify">≡</em></button>
+				 <button data-toggle="dropdown" class="btn dropdown-toggle" type="button"><em class="icon-align-justify">≡</em></button>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="setting.html">设置</a>
+					</li>
+					<li>
+						<a href="collection.html">我的曲库</a>
+					</li>
+					<li>
+						<a href="todayplay.html">今日播放</a>
+					</li>
+				</ul>
 		</div>
 		<form id="search-location" class="form-search">
 				<input id="search-lenth" class="input-medium search-query" type="text"/> <button type="submit" class="btn">查找</button>
 		</form>
 		<div style="padding-top:50px">
             <ul class="nav nav-pills nav-justified">
-				<li>
-					<a href="main.html"><font color="white">今日推荐</font></a>
+				<li    class="active">
+					<a href="main.html">今日推荐</a>
 				</li>
-				<li   class="active">
-					<a href="record.html">成长记录</a>
+				<li>
+					<a href="record.html"><font color="white">成长记录</font></a>
 				</li>
 				<li>
 					<a href="about-me.html"><font color="white">关于我</font></a>
