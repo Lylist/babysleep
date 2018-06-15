@@ -22,13 +22,36 @@ height:100%;
 <!--<div>
 <a href="./parent/main.html"><img border="0" src="../../images/1.gif" /> </a>
 </div>-->
-<img onclick="changeCode();" src="../../images/1.gif" id="img" />
+<img onclick="changeCode();" src="../../images/1.gif" class="mydiv" id="img" />
+</body>
 <script>
    function changeCode(){
-   var str="../../images/"+Math.random()+".gif";
       document.getElementById("img").src="../../images/1.gif";
    }
 </script>
 
-</body>
+
+
+<script>  
+/*设置一个长按的计时器，如果点击这个图层超过2秒则触发，mydiv里面的文字从out变in的动作*/  
+var timeout ;  
+   
+$(".mydiv").mousedown(function() {  
+    timeout = setTimeout(function() {  
+        window.location.href='parent/main.html';
+    }, 2000);  
+});  
+   
+$(".mydiv").mouseup(function() {  
+    clearTimeout(timeout);  
+    document.getElementById("img").src="../../images/1.gif"; 
+});  
+  
+$(".mydiv").mouseout(function() {  
+    clearTimeout(timeout);  
+    $(".mydiv").text("out");
+	
+});  
+  
+</script>
 </html>

@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>创建新的频道</title>
+    <title>上传文件</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"/>
@@ -21,20 +21,11 @@
 </head>
 <body>
 <div class="container-fluid">
- <div class="page-header">
-        <h1>选择图片
-        </h1>
-    </div>
-	<form enctype="multipart/form-data">
-        <div class="file-loading">
-            <input id="file-0a" class="file" type="file" multiple data-min-file-count="1">
-        </div>
-    </form>
 	<div class="row-fluid">
 		<div class="span12" style="padding-left:40%;padding-top:3%">
 			<form>
 				<fieldset>
-					<!--<legend>上传资源</legend>-->
+					<legend>上传资源</legend>
 					<p>
 						名称：<input type="text" />
 					</p>
@@ -53,10 +44,6 @@
 		</div>
 	</div>
 </div>
-<div class="page-header">
-        <h1 >选择文件
-        </h1>
-    </div>
 <div class="container kv-main">
     <form enctype="multipart/form-data">
         <br>
@@ -65,8 +52,7 @@
         </div>
         <br>
         <button type="submit" class="btn btn-primary">Submit</button>
-        <a href="main.html" <button type="reset" class="btn btn-default">Return</button>
-		</a>
+        <button type="reset" class="btn btn-default">Return</button>
     </form>
 </div>
 </body>
